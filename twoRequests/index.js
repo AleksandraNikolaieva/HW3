@@ -35,7 +35,7 @@ function action() {
 		})
 	});
 
-	const combined = Rx.Observable.combineLatest(myStream1, myStream2);
+	const combined = rx.combineLatest(myStream1, myStream2);
 
 	combined.subscribe(all => {
 		console.log(all);
